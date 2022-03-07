@@ -11,4 +11,12 @@ public class Vacataire extends Utilisateur{
 
     @ManyToOne
     public Cours sonCours;
+
+    public Cours getSonCours() {
+        return sonCours;
+    }
+
+    public void setSonCours(Cours sonCours) {
+        this.sonCours = sonCours;
+    }
 }
