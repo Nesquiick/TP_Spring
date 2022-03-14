@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "e819cfba-24b6-4999-b9a6-8cfc81905bfc",
+		"name": "http://localhost:8080/",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ajouter un vacataire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mail\":\"oui@non.fr\",\r\n    \"nom\":\"Noiraud\",\r\n    \"prenom\":\"Axel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vacataires/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacataires",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Récupérer un vacataire",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vacataires/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacataires",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Récupérer tous les vacataires",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/vacataires/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacataires",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Récupérer tous les cours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cours/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supprime un vacataire",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vacataires/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacataires",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajouter un cours",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"intitule\": \"Espagnol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cours/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cours",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Supprimer cours",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
